@@ -34,4 +34,4 @@ app.include_router(vote.router)
 @app.get("/")  # Decorator - sa ovime donju funkciju definiramo kao fastAPI funkciju - tome služe dekoratori - ovdje specificiramo GET http request metodu i unutar toga PATH prema root funkciji koji kreće iza tvoje domene -  ovdje / predstavlja to da smo na istom mjestu na kojem je domena - znači root je tvoja home domena npr www.home.com
 def root():  # Function - async keyword doing sth asyncronosly (you can remove that and everythin we'll be pretty much the same) - root - arbitrary name
     # here we're returning python dictionary and fastAPI just change it to JSON ehich is universal data language in web
-    return {"message": "Welcome to my API!!!!"}
+    return {"message to world": "Welcome to my API!!!!"}
